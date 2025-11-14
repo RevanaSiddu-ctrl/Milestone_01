@@ -5,7 +5,7 @@ import orderbg from "../images/orderbg.png"
 export default function OnlineOrder(){
     return(
         <>
-            <div className="relative mt-10 mb-20 flex justify-center">
+            <div className="relative pt-20  flex justify-center dark:bg-[#1b1b1b]">
                 <Image src={orderbg} className="h-[600px] w-300 rounded rounded-3xl" alt="image"></Image>
                 <Image src={mobileimage} className="h-[350px] w-100 rounded rounded-2xl absolute top-[100px] left-[290px]" alt="image"></Image>
                 <div className="absolute flex flex-col top-[200px] left-[730px] ">

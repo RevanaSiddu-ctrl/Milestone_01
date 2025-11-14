@@ -25,38 +25,39 @@ export default function Menu() {
     <>
       <HeroSection2 location="Restaurnt Best Food"/>
 
-      <div className="  relative bg-[#aba496] min-h-[400px] w-full mb-10 flex flex-col justify-start items-center">
+      <div className="  relative bg-[#aba496] min-h-[400px] w-full  flex flex-col justify-start items-center dark:bg-[#1f1f1f] dark:border-[#C6A664] ">
                     
       <div className="flex justify-center mt-10">
-            <div className="h-16 w-130 border-2 border-black flex  items-center mt-6 rounded-xl justify-center">
+            <div className="h-16 w-130 border-2 border-black flex items-center mt-6 rounded-xl justify-center dark:border-[#C6A664]">
                 <div className="flex flex-row">
-                    <button className={`text-black h-13 w-30 text-lg font-medium rounded-xl  cursor-pointer ${menu==item1? "bg-[#826A45] text-white": "bg-[#aba496] text-black"}`} onClick={()=>{setmenu(item1)}} >Main Dishes</button>
-                    <button className={`text-black h-13 w-30 text-lg font-medium rounded-xl  cursor-pointer ${menu==item2? "bg-[#826A45] text-white": "bg-[#aba496] text-black"}`} onClick={()=>{setmenu(item2)}}>DESSERTS</button>
-                  <button className={`text-black h-13 w-30 text-lg font-medium rounded-xl cursor-pointer ${menu==item3? "bg-[#826A45] text-white": "bg-[#aba496] text-black"}`} onClick={()=>{setmenu(item3)}}>SEA FOODS </button>
-                  <button className={`text-black h-13 w-30 text-lg font-medium rounded-xl  cursor-pointer ${menu==item4? "bg-[#826A45] text-white": "bg-[#aba496] text-black"}`} onClick={()=>{setmenu(item4)}}> BEVERAGE</button>
+                    <button className={`text-black h-13 w-30 text-lg font-medium rounded-xl  cursor-pointer  ${menu==item1? "bg-[#826A45] text-white": "bg-[#aba496] text-black dark:bg-[#1f1f1f] dark:text-white"}`} onClick={()=>{setmenu(item1)}} >Main Dishes</button>
+                    <button className={`text-black h-13 w-30 text-lg font-medium rounded-xl  cursor-pointer  ${menu==item2? "bg-[#826A45] text-white": "bg-[#aba496] text-black dark:bg-[#1f1f1f] dark:text-white"}`} onClick={()=>{setmenu(item2)}}>DESSERTS</button>
+                  <button className={`text-black h-13 w-30 text-lg font-medium rounded-xl cursor-pointer  ${menu==item3? "bg-[#826A45] text-white": "bg-[#aba496] text-black dark:bg-[#1f1f1f] dark:text-white"}`} onClick={()=>{setmenu(item3)}}>SEA FOODS </button>
+                  <button className={`text-black h-13 w-30 text-lg font-medium rounded-xl  cursor-pointer  ${menu==item4? "bg-[#826A45] text-white": "bg-[#aba496] text-black dark:bg-[#1f1f1f] dark:text-white"}`} onClick={()=>{setmenu(item4)}}> BEVERAGE</button>
                  </div>
             </div>
 
         </div>
-        <div className=" absolute bottom-[-150px] ">
+        <div className=" absolute z-20 dark:bg-[#1f1f1f] bottom-[-140px] ">
        <CardB mainImg={menu.mainImg} dishes={menu.dishes}/>
        </div>
       </div>
-      <div className="mt-[300px] ml-30">
+      <div className="relative pt-50   dark:bg-[#1f1f1f] z-10 w-full">
         <VedioSection/>
       </div>
 
-      <div className="relative flex-row mb-190 ">
-
+      <div className="relative flex-row    dark:bg-[#1f1f1f]">
+      <div className="relative flex-row mb-123 dark:bg-[#1b1b1b]  pt-40">
         <Image
             src={bgspoons}
             alt="bgspoons"
-            className="absolute top-[-230px] right-[0px] -translate-x-[0px] h-[300px] w-[500px] object-contain opacity-30 z-0"
+            className="absolute top-[-110px] right-[10px] -translate-x-[0px] h-[300px] w-[500px] object-contain opacity-30 z-50"
           />
 
-        <Image src={bgmenu} alt="bg" className="h-[500px] brightness-40 absolute"/>
         
-         <div className="flex w-[600px] flex-col left-[200px] absolute top-[90px] ">
+        <Image src={bgmenu} alt="bg" className="h-[500px] brightness-40 absolute dark:bg-[#1f1f1f]"/>
+        
+         <div className="flex w-[600px] flex-col left-[200px] absolute top-[190px] ">
            <div className="text-white text-3xl relative my-5">Reservation ---------➤</div>
           <div className="text-white text-3xl relative font-serif font-extrabold my-5">Reservation Your Favorite Private Table</div>
           <h6 className="text-white text-0.5xl font-light">
@@ -75,14 +76,14 @@ export default function Menu() {
             </div>
           </div>
          </div>
-        <div className="h-[460px] w-[350px] bg-[#1b1b1b] rounded-2xl absolute right-[200px] top-[200px] pt-1 pl-6">
+        <div className="h-[460px] w-[350px] bg-[#1b1b1b] rounded-2xl  border border-2 absolute right-[150px] top-[300px] pt-1 pl-6 dark:bg-[#1f1f1f] dark:border-[#C6A664]">
 
               <div className="flex flex-col">
-                <div className="text-white text-2xl font-sans font-bold mb-2">Phone</div>
-                <input className="placeholder-white text-white border text-1xl border-white w-[200px] font-extralight p-1" placeholder="+235686768" />
+                <div className="text-white text-2xl font-sans font-bold mb-2  ">Phone</div>
+                <input className="placeholder-white text-white border text-1xl border-white w-[200px] font-extralight p-1 dark:border-[#C6A664]/60" placeholder="+235686768" />
 
                  <div className="text-white text-2xl font-sans font-bold mt-5 mb-2">Person</div>
-                       <select className="text-white bg-transparent border border-white w-[200px] font-extralight p-1">
+                       <select className="text-white bg-transparent border border-white w-[200px] font-extralight p-1 dark:border-[#C6A664]/60">
                           <option className="bg-[#1b1b1b]">1 Person</option>
                           <option className="bg-[#1b1b1b]">2 Persons</option>
                           <option className="bg-[#1b1b1b]">3 Persons</option>
@@ -90,10 +91,10 @@ export default function Menu() {
                         </select>
 
                    <div className="text-white text-2xl font-sans font-bold mt-5 mb-2">Date</div>
-                    <input type="date" className="text-white border border-white w-[200px] bg-transparent p-1" />
+                    <input type="date" className="text-white border border-white w-[200px] bg-transparent p-1 dark:border-[#C6A664]/60" />
 
                     <div className="text-white text-2xl font-sans font-bold mt-5 mb-2">Time</div>
-                         <select className="text-white bg-transparent border border-white w-[200px] font-extralight p-1">
+                         <select className="text-white bg-transparent border border-white w-[200px] font-extralight p-1 dark:border-[#C6A664]/60">
                              <option className="bg-[#1b1b1b]">10:00 AM</option>
                              <option className="bg-[#1b1b1b]">12:00 PM</option>
                               <option className="bg-[#1b1b1b]">02:00 PM</option>
@@ -103,10 +104,13 @@ export default function Menu() {
                     <button className="h-[50px] w-[130px] bg-[#826A45] hover:text-black  hover:bg-white mt-10 rounded rounded-2xl text-white text-extrabold"  >Book A Table</button>
                </div>
           </div>
+          </div>
 
       </div>
-
-      <Footer/>
+        <div className="h-[370px]  dark:bg-[#1f1f1f] pt-40">
+          <Footer/>
+        </div>
+      
       
       
     </>

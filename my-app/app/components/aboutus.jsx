@@ -11,7 +11,7 @@ import ab5 from "../images/ab5.png"
 export default function C1(){
     return(
         <>
-        <div className="flex flex-col justify-items-center ">
+        <div className="flex flex-col justify-items-center dark:bg-black">
             <Image src={aboutusbg} alt="bg" className="relative w-sceern h-[100px]"/>
             <div className="absolute text-[#826A45] ml-[40%] mt-10 text-1xl font-normal">-------OUR TRUSTED 8K HAPPY PARTNER------</div>
             <div className="flex flex-row px-60 gap-20">

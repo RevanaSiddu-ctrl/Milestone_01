@@ -3,10 +3,10 @@ import Image from "next/image"
 export  function ContactCard({image, disc, extra}){
     return(
         <>
-        <div className="h-[200px] w-[400px] flex flex-col  items-center bg-white border border-black rounded-xl">
+        <div className="h-[200px] w-[400px] flex flex-col  items-center bg-white border border-black rounded-xl dark:bg-[#1f1f1f] dark:border-[#C6A664]/60 ">
         <Image src={image} alt="logo" className="h-[50px] w-[50px] mb-4"/>
-       <h1 className="text-black text-2xl font-medium">{disc}</h1>
-        <h1 className="text-black text-2xl font-medium mt-2">{extra}</h1>
+       <h1 className="text-black text-2xl font-medium dark:text-white">{disc}</h1>
+        <h1 className="text-black text-2xl font-medium mt-2 dark:text-white">{extra}</h1>
       </div>
 
         </>
@@ -16,9 +16,9 @@ export  function ContactCard({image, disc, extra}){
 export function ContactCard1(){
     return(
         <>
-            <div className="h-[500px] w-[700px] bg-white-200 border bg-white flex flex-col justify-center items-center">
+            <div className="h-[500px] w-[700px] bg-white-200 border bg-white flex flex-col justify-center items-center dark:bg-[#1f1f1f] dark:border-[#C6A664]/60">
                 <h1 className="text-[#826A45] text-2xl font-extrabold">------Keep in touch-----</h1>
-                <h1 className="text-black font-serif text-2xl font-extrabold">Send Us a Message</h1>
+                <h1 className="text-black font-serif text-2xl font-extrabold dark:text-white  ">Send Us a Message</h1>
                 <textarea placeholder="  Name" className="placeholder-gray-900 text-1xl font-light  bg-[#F3F3F3] h-[50px] w-[600px] my-4"/>
                 <div className="flex flex-row my-4 justify-items-center pl-1">
                     <textarea placeholder="  Email*" className="placeholder-gray-900 text-1xl font-light  bg-[#F3F3F3] h-[50px] w-[250px] ml-4"></textarea>

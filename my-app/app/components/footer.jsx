@@ -5,7 +5,7 @@ import restan from "../images/restan.webp"
 export default function Footer(){
     return(
         <>
-        <div className=" relative z-10 -mb-40 ml-60 h-100 w-270 bg-[#1b1b1b]  flex flex-row pt-20 pl-10  ">
+        <div className=" relative z-10 -mb-55 ml-60 h-100 w-270 bg-[#1b1b1b] flex flex-row pt-20 pl-10  ">
 
             <div className="flex flex-col w-[25%] ">
                 <div className="text-2xl text-white my-4 ">About Us</div>

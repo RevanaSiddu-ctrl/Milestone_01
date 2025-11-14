@@ -17,10 +17,10 @@ export default function Contactus(){
     return(
         <>
         <HeroSection2 location="ContactUS"/>
-        <div className="relative w-full h-[800px] mt-10">
-        <Image src={contactusbg} alt="contactusbg" className="w-full  h-[800px] object-cover brightness=10 mt-10"/>
+        <div className="relative w-full h-[1000px]  dark:bg-[#1f1f1f]">
+        <Image src={contactusbg} alt="contactusbg" className="w-full  h-[1000px] object-cover brightness=10 dark:brightness-0 "/>
 
-        <div className="absolute  flex flex-row mx-10 gap-5 top-[50px] left-[100px]">
+        <div className="absolute  flex flex-row mx-10 gap-5 top-[50px] left-[100px] dark:bg-[#1f1f1f] ">
             {alldata.map((data)=>(
                 <ContactCard 
                 key={data.id}   
@@ -33,14 +33,19 @@ export default function Contactus(){
         <div className="absolute top-[400px] flex left-[400px] br-white">
             <ContactCard1/>
         </div>
-       <div className="absolute top-[900] left-[90]"> 
+       <div className=" top-[900]  w-full dark:bg-[#1f1f1f]"> 
         <VedioSection/>
        </div>
-       <Image src={bgspoons} alt="bgspoons"
-            className="absolute top-330 right-10 h-[300px] w-[500px] object-contain opacity-30 z-0" />
-       <div className="relative top-[750]">
-        <Footer/>
-       </div>   
+
+                <div className="relative w-full overflow-visible">
+                    <div className="relative z-10  dark:bg-[#1f1f1f] pt-30">
+                        <Footer />
+                        <Image src={bgspoons} alt="bgspoons" className="absolute top-[-80px] right-10 h-[300px] w-[500px] object-contain opacity-30 z-0"
+                      />
+                      </div>
+                </div>
+
+         
         </div>
 
         </>

@@ -7,9 +7,9 @@ import sp3 from "../images/sp3.webp"
 export default function Todayspl(){
     return(
         <>
-            <div className="relative mt-20 flex justify-center ">
+            <div className="relative flex justify-center dark:dark:bg-[#1b1b1b] ">
                 
-                    <Image src={todayspl} className="h-[600px] w-300 rounded rounded-2xl" alt="Image"></Image>
+                    <Image src={todayspl} className="h-[600px] w-300 pt-20 rounded rounded-0xl" alt="Image"></Image>
                 
                 <Image src={sp2} className="h-[160px] w-40 rounded rounded-2xl absolute left-[320px] top-[130px]" alt="Image"></Image>
                 <Image src={sp1} className="h-[220px] w-60 rounded rounded-2xl absolute left-[510px] top-[220px]" alt="Image"></Image>

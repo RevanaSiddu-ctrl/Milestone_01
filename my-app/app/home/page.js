@@ -41,14 +41,14 @@ export default function MenuCard() {
   return (
     <>
     <NavBar/>
-    <div className="relative pb-[450px]">
+    <div className="relative pb-[450px] dark:dark:bg-[#1b1b1b] dark:text-white">
         <HeroSection1/>
-        <div className=" absolute top-[680px] flex flex-row">
+        <div className=" absolute top-[680px] left-[100px] flex flex-row">
             <BookTable/>
             
-            <div className="flex flex-col font- font-serif font-bold justify-center ">
-             <h1 className="text-4xl text-black my-4 ml-[200px] mt-[150px]">🔥 Our Popular category</h1>
-             <div className="flex gap-2 ml-[200px]">
+            <div className="flex flex-col font-serif font-bold justify-center ">
+             <h1 className="text-4xl text-black dark:text-white dark:dark:bg-[#1b1b1b] my-4 ml-[100px] mt-[150px]">🔥 Our Popular category</h1>
+             <div className="flex gap-2 ml-[100px]">
                 {category.map((c)=>(
                     <PopularCaterory
                     key={c.id}
@@ -62,7 +62,7 @@ export default function MenuCard() {
         </div>
     </div>
 
-        <div className="flex flex-row justify-center">
+        <div className="flex flex-row justify-center dark:dark:bg-[#1b1b1b] dark:text-white">
             {service.map((s)=>(
                 <Service
                 key={s.id}
@@ -72,24 +72,24 @@ export default function MenuCard() {
                 />
             ))}
         </div>
+            <div className="dark:dark:bg-[#1b1b1b]">
+            <Todayspl/></div>
 
-            <Todayspl/>
-
-                <div className="text-2xl flex flex-col mt-10 items-center">
-                    <h1 className="text-[#826A45] font-light text-3xl">-----FOOD MENU-----</h1>
-                    <h1 className="text-black text-3xl font-extrabold font-serif">OUR SPECIAL MENU</h1>
+                <div className="text-2xl flex flex-col  items-center dark:bg-[#1b1b1b] dark:text-white">
+                    <h1 className="text-[#826A45] font-light text-3xl pt-10">-----FOOD MENU-----</h1>
+                    <h1 className="text-black dark:text-white text-3xl font-extrabold font-serif">OUR SPECIAL MENU</h1>
                 </div>
-      <div className="flex justify-center ">
-            <div className="h-27 w-180 border-2 border-black flex justify-center items-center mt-10 rounded-2xl">
+      <div className="flex justify-center dark:bg-[#1b1b1b] dark:text-white">
+            <div className="h-27 w-190 border-2 border-black  dark:border-[#C6A664]/40  flex justify-center items-center mt-10 rounded-2xl">
                 <div className="flex flex-row">
-                    <button className={`text-black h-20 w-40 text-2xl font-medium rounded-2xl mx-2 cursor-pointer ${menu=="main"? "bg-[#826A45] text-white": "bg-white text-black"}`}  onClick={()=>setmenu("main")}>Main Dishes</button>
-                    <button className={`text-black h-20 w-40 text-2xl font-medium rounded-2xl mx-2 cursor-pointer  ${menu=="dess"? "bg-[#826A45] text-white": "bg-white text-black"}`}  onClick={()=>setmenu("dess")}>DESSERTS</button>
-                    <button className= {`text-black h-20 w-40 text-2xl font-medium rounded-2xl mx-2  cursor-pointer ${menu=="seafood"? "bg-[#826A45] text-white": "bg-white text-black"}`} onClick={()=>setmenu("seafood")}>SEA FOODS</button>
-                    <button className={`text-black h-20 w-40 text-2xl font-medium rounded-2xl mx-2  cursor-pointer ${menu=="beverage"? "bg-[#826A45] text-white": "bg-white text-black"}` } onClick={()=>setmenu("beverage")}>BEVERAGE</button>
+                    <button className={`text-black h-20 w-40 text-2xl font-medium rounded-2xl mx-2 cursor-pointer ${menu=="main"? "bg-[#826A45] text-white": "bg-white text-black dark:bg-[#1b1b1b] dark:text-white "}`}  onClick={()=>setmenu("main")}>Main Dishes</button>
+                    <button className={`text-black h-20 w-40 text-2xl font-medium rounded-2xl mx-2 cursor-pointer  ${menu=="dess"? "bg-[#826A45] text-white": "bg-white text-black dark:bg-[#1b1b1b] dark:text-white"}`}  onClick={()=>setmenu("dess")}>DESSERTS</button>
+                    <button className= {`text-black h-20 w-40 text-2xl font-medium rounded-2xl mx-2  cursor-pointer ${menu=="seafood"? "bg-[#826A45] text-white": "bg-white text-black dark:bg-[#1b1b1b] dark:text-white"}`} onClick={()=>setmenu("seafood")}>SEA FOODS</button>
+                    <button className={`text-black h-20 w-40 text-2xl font-medium rounded-2xl mx-2  cursor-pointer ${menu=="beverage"? "bg-[#826A45] text-white": "bg-white text-black dark:bg-[#1b1b1b] dark:text-white"}` } onClick={()=>setmenu("beverage")}>BEVERAGE</button>
               </div>
             </div>
         </div>
-      <div className="grid grid-cols-3 gap-0  mt-10 my-10 ">
+      <div className="grid grid-cols-3 gap-0 pt-10  dark:bg-[#1b1b1b] dark:text-white">
         {itemDisplay.map((dish) => (
           <CardA
             key={dish.id}
@@ -103,28 +103,30 @@ export default function MenuCard() {
       </div>
 
       <OnlineOrder/>
-      <VedioSection/>
+      <div className="dark:bg-[#1f1f1f]">
+        <VedioSection/>
+      </div>
 
 
-<div className="relative bg-white overflow-visible">
+<div className="relative bg-white dark:bg-[#1b1b1b] overflow-visible">
   
   <Image
     src={bgspoons}
     alt="bgspoons"
-    className="absolute top-[-230px] right-[0px] -translate-x-[0px] h-[300px] w-[700px] object-contain opacity-30 z-0"
+    className="absolute top-[-150px] right-[0px] -translate-x-[10px] h-[300px] w-[700px] object-contain opacity-30 z-0"
   />
 
   
-  <div className="relative h-[500px] bg-[#EBE9EC] w-full mb-10 flex flex-col justify-center items-center z-10 overflow-visible">
+  <div className="relative h-[550px] bg-[#EBE9EC] dark:bg-[#1b1b1b] w-full pt-2 flex flex-col justify-center items-center z-10 overflow-visible">
     <div className="z-10 flex flex-col items-center text-center">
       <h1 className="text-[#8B7E74] tracking-widest text-sm mb-2">
         ----- Master Chefs -----
       </h1>
-      <h1 className="text-black text-3xl font-bold font-serif">
+      <h1 className="text-black dark:text-white text-3xl font-bold font-serif">
         Meet Our Special Chefs
       </h1>
 
-      <div className="grid grid-cols-3 gap-10 justify-items-center mt-8">
+      <div className="grid grid-cols-3 gap-10 justify-items-center pt-10">
         {chefs.map((chef) => (
           <MasterChef
             key={chef.id}
@@ -139,11 +141,10 @@ export default function MenuCard() {
 </div>
 
 
-
-
-        <div className="text-[#826A45] text-3xl  font-serif flex justify-center ">------News & Blogs------</div>
-        <div className="text-black text-4xl  font-extrabold font-serif flex justify-center ">Our Latest News & Blog</div>
-        <div className="h-[650px] flex flex-row grid grid-cols-2 gap-25 mb-10 justify-items-center mt-[50px]">
+     <div className="relative">
+        <div className="text-[#826A45] text-3xl  font-serif flex justify-center dark:bg-black pt-3">------News & Blogs------</div>
+        <div className="text-black dark:text-white text-4xl  font-extrabold pt-2 font-serif flex justify-center dark:bg-black">Our Latest News & Blog</div>
+        <div className="h-[900px] grid grid-cols-2 gap-25 pt-10 justify-items-center  dark:bg-black dark:text-white">
             {blogs.map((blog)=>(
                 <Blog
                     key={blog.id}
@@ -154,9 +155,11 @@ export default function MenuCard() {
                 />
             ))}
         </div>
+        </div>
       
-
-      <Footer />
+      <div className="absolute top-[6000px] left-0 w-full z-20">
+      <Footer /> 
+      </div>
     </>
   );
 }
