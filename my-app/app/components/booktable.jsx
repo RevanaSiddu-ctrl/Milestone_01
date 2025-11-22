@@ -4,7 +4,12 @@ import spoon from "../images/spoon.png";
 export default function BookTable() {
   return (
     <>
-      <div className="relative h-[500px] w-[400px] border border-gray-300 dark:border-[#C6A664]/40  bg-white dark:bg-[#121212] rounded-2xl flex flex-col justify-center items-center  z-0 transition-all duration-500 shadow-md dark:shadow-[#C6A664]/10">
+      <div className="relative h-[500px] w-[400px] 
+    max-sm:h-auto max-sm:py-5 max-sm:w-full
+    border border-gray-300 dark:border-[#C6A664]/40  
+    bg-white dark:bg-[#121212] rounded-2xl 
+    flex flex-col justify-center items-center  
+    z-0 transition-all duration-500 shadow-md dark:shadow-[#C6A664]/10">
         
         <Image 
           src={spoon} 

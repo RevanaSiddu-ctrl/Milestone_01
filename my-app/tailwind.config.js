@@ -7,15 +7,15 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-  extend: {
-    colors: {
-      darkbg: '#121212',
-      darksurface: '#1E1E1E',
-      darktext: '#EAEAEA',
-      gold: '#C6A664'
+    extend: {
+      colors: {
+        darkbg: '#121212',
+        darksurface: '#1E1E1E',
+        darktext: '#EAEAEA',
+        gold: '#C6A664'
+      },
     },
   },
-},
 
   plugins: [],
 };
