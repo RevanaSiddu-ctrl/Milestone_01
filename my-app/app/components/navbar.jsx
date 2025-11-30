@@ -10,7 +10,8 @@ export default function NavBar(){
 
     return(
         <>
-            <div  id="navbar" className="fixed top-0 left-0  h-30 bg-[#383838] flex flex-row items-center justify-center opacity-0 -translate-y-10 transition-all duration-300 z-50">
+            <div  id="navbar" className="fixed top-0 left-0  h-30 bg-[#383838] flex flex-row items-center justify-center opacity-0 -translate-y-10 transition-all duration-300 z-50  w-full
+ max-sm:hidden">
                 <button className="text-[#FFFFFF] cursor-pointer text-2xl font-sans-SERIF  mx-25" onClick={()=>{route.push("/home")}}>Home</button>
                 
                  <button className="text-[#FFFFFF] cursor-pointer text-2xl font-sans-SERIF  mx-25" onClick={()=>{route.push("/menu")}}>Menu</button> 

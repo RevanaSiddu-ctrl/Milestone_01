@@ -1,3 +1,11 @@
 @import "tailwindcss";
 
+/* Light mode default */
+body {
+  @apply bg-white text-black;
+}
 
+/* Dark mode (when <html class="dark"> is applied) */
+.dark body {
+  @apply bg-black text-white;
+}
